@@ -54,5 +54,6 @@ public class KruidvatTest {
         cartPage.clickOnAcceptButton();
         cartPage.clickOutside();
         Assert.assertEquals("Added incorrect product to the cart!", "Kruidvat Sensitive Handzeep Navulling", cartPage.getTextOfProductTitle());
+        driverManager.quitDriver();
     }
 }
